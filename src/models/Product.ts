@@ -1,3 +1,5 @@
+import { formatAsPennies } from "../utils/NumberUtil";
+
 export class Product {
   public code: string;
   public name: string;
@@ -15,6 +17,6 @@ export class Product {
   }
 
   getFormattedPrice() {
-    return (this.price / 100).toFixed(2);
+    return formatAsPennies(this.price);
   }
 }

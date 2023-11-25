@@ -1,5 +1,5 @@
 import { Item } from "../../models/Order";
-import { formatAsPrice } from "../../utils/NumberUtil";
+import { formatAsPennies } from "../../utils/NumberUtil";
 
 interface Props {
   item: Item;
@@ -11,7 +11,7 @@ export function OrderItem({ item }: Props) {
       <span className="font-bold">{item.product.name}</span>
       <div className="w-1/5 flex justify-between">
         <span className="font-mono">x{item.quantity}</span>
-        <span className="font-mono">£{formatAsPrice(item.price)}</span>
+        <span className="font-mono">£{formatAsPennies(item.price)}</span>
       </div>
     </div>
   );
