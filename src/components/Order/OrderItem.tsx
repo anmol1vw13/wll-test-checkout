@@ -1,5 +1,5 @@
 import { Item } from "../../models/Order";
-import { formatAsPennies } from "../../utils/NumberUtil";
+import { formatAsPennies } from "../../utils/number";
 
 interface Props {
   item: Item;

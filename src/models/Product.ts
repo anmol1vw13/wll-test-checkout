@@ -1,4 +1,4 @@
-import { formatAsPennies } from "../utils/NumberUtil";
+import { formatAsPennies } from "../utils/number";
 
 export class Product {
   public code: string;
