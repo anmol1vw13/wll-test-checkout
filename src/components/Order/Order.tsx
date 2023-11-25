@@ -7,7 +7,7 @@ export function Order() {
   const order = useSelector((state: RootState) => state.order);
 
   return (
-    <div className="mr-2.5 border-2 border-solid border-dark-black px-2.5 py-4 w-2/5 max-w-[600px]">
+    <div className="mr-2.5 border-2 border-solid border-dark-black px-2.5 py-4 w-2/5 max-w-[600px] max-h-[500px] overflow-y-scroll">
       <h2 className="mt-0">Your Order</h2>
 
       {order.items.map((item) => (
