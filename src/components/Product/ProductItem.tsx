@@ -1,5 +1,4 @@
 import { Product } from "../../models/Product";
-import "./Product.css";
 
 interface Props {
   product: Product;
@@ -7,9 +6,9 @@ interface Props {
 
 export function ProductItem({ product }: Props) {
   return (
-    <div className="Product">
-      <div className="Product-name">{product.name}</div>
-      <div className="Product-price">£{product.getFormattedPrice()}</div>
+    <div className="flex justify-between py-3 px-4 bg-indianred text-white m-2 cursor-pointer">
+      <div className="font-bold">{product.name}</div>
+      <div className="font-mono">£{product.getFormattedPrice()}</div>
     </div>
   );
 }

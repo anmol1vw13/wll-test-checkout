@@ -1,15 +1,14 @@
 import { ProductList } from "../ProductList/ProductList";
 import { Order } from "../Order/Order";
 import { productData } from "../../config/products";
-import "./App.css";
 
 export function App() {
   return (
-    <div className="App">
-      <div className="App-header">
+    <div className="text-center">
+      <div className="bg-black h-[135px] p-5 text-white">
         <h1>Welcome to the Checkout</h1>
       </div>
-      <div className="App-body">
+      <div className="flex justify-around my-5">
         <ProductList products={productData} />
         <Order />
       </div>
