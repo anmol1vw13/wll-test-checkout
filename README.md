@@ -36,7 +36,11 @@ The project uses create-react-app as a starter kit. To run it the steps should b
 Please send a zip archive containing your code (without the node_modules directory) to
 webb at whitelabel-loyalty dot com.
 
-## Assumption
-Offers are of two types 
-1) Based on products - Each product can only have 1 offer configured
-2) Based on cart value - Offer based on the total amount would be selected
+## Assumptions
+- Offer Types
+    -   Product Offers : Each product supports a single configured offer.
+    - Cart Value Offers:
+Offers based on total cart value are applied dynamically.
+
+- Order Data Lifespan:
+    - Order data is ephemeral, disappearing on page refresh. Redux DevTools can be used to preserve state locally.
