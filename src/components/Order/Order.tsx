@@ -13,10 +13,12 @@ export function Order() {
       {order.items.map((item) => (
         <OrderItem item={item} key={item.product.code} />
       ))}
-
-      <OrderTotal label="Amount" total={order.total} />
-      <OrderTotal label="Discount" total={order.total - order.finalTotal} />
-
+      {order.total > 0 && (
+        <>
+          <OrderTotal label="Amount" total={order.total} />
+          <OrderTotal label="Discount" total={order.total - order.finalTotal} />
+        </>
+      )}
       <OrderTotal label="Payable" total={order.finalTotal} />
     </div>
   );

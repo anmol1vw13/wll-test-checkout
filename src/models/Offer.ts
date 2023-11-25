@@ -13,11 +13,11 @@ export type ProductOffer = {
   offerValue: number;
 };
 
-export interface BillOffer {
+export type BillOffer = {
   offerType: "BILL";
   conditionalAmount: number;
   offerValueType: OfferValueType;
   offerValue: number;
-}
+};
 
 export type Offer = ProductOffer | BillOffer;

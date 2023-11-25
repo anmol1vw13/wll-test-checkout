@@ -9,6 +9,7 @@ it("upon clicking adds product to order section", async () => {
   setup();
   const asparagusComp = screen.getByText("Asparagus");
   userEvent.click(asparagusComp);
+  //Asparagus shows up twice
   expect(screen.getAllByText("Asparagus").length).toEqual(2);
 });
 

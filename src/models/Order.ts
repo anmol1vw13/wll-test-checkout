@@ -6,8 +6,8 @@ export type Item = {
   price: number;
 };
 
-export interface Order {
+export type Order = {
   items: Item[];
   total: number;
   finalTotal: number;
-}
+};
