@@ -6,7 +6,9 @@ module.exports = {
       colors: {
         'black': '#222',
         'dark-black': '#222',
-        'indianred': '#cd5c5c'
+        'indianred': '#cd5c5c',
+        'nyanza': '#EEE5E9',
+        'columbia-blue': '#B8D4E3'
       }
     },
   },

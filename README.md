@@ -35,3 +35,8 @@ The project uses create-react-app as a starter kit. To run it the steps should b
 
 Please send a zip archive containing your code (without the node_modules directory) to
 webb at whitelabel-loyalty dot com.
+
+## Assumption
+Offers are of two types 
+1) Based on products - Each product can only have 1 offer configured
+2) Based on cart value - Offer based on the total amount would be selected

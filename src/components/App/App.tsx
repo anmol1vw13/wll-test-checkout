@@ -1,6 +1,6 @@
 import { ProductList } from "../ProductList/ProductList";
 import { Order } from "../Order/Order";
-import { productData } from "../../config/products";
+import { productData } from "../../config/data";
 
 export function App() {
   return (
